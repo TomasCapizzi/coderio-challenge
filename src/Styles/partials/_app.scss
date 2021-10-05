@@ -17,10 +17,22 @@ body{
     font-family: 'Cabin', sans-serif;
 }
 
-/*
-White: f1faee
-Red: e63946
-Light Blue: a8dadc
-Blue: 457b9d
-dark Blue: 1d3557
-*/
+
+// ScrollBar
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: #fca311;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #fab039;
+}
