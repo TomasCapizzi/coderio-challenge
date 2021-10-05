@@ -1,0 +1,237 @@
+.user-timezones{
+    width: 100%;
+    display: flex;
+
+    .timezone{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .intro{
+            display: flex;
+            background-color: transparent;
+            color: #14213d;
+            justify-content: center;
+            width: 95%;
+            h3{
+                color: #fca311;
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
+    
+
+        div{
+            min-width: 150px;
+            max-width: auto;
+            margin: 10px 10px;
+            padding: 10px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: #e5e5e5;
+            color: #14213d;
+            border-radius: 10px;
+            position: relative;
+
+            h3{
+                margin: 0;
+            }
+            h3:nth-child(2){
+                margin: 5px 0;
+            }
+            h3:nth-child(3){
+                color: #fca311;
+            }
+
+            p{
+                font-family: 'Rajdhani', sans-serif;
+                font-size: 1.2rem;
+                margin: 10px 0;
+            }
+            p:nth-child(5){
+                color: #fca311;
+                font-weight: 600;
+            }
+
+            button{
+                background-color: transparent;
+                border: none;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                svg{
+                    font-size: 1.2rem;
+                    color: #fca311;
+                    cursor: pointer;
+                }
+                svg:hover{
+                    color: #000000;
+                    transition: ease-in-out 0.2s;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 400px){
+    .user-timezones{
+        width: 100%;
+        display: flex;
+    
+        .timezone{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .intro{
+                display: flex;
+                background-color: transparent;
+                color: #14213d;
+                justify-content: center;
+                width: 95%;
+                h3{
+                    color: #fca311;
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+        
+    
+            div{
+                width: 100%;
+                margin: 10px 5px;
+                padding: 15px;
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background-color: #e5e5e5;
+                color: #14213d;
+                border-radius: 10px;
+                position: relative;
+    
+                h3{
+                    margin: 0;
+                }
+                h3:nth-child(2){
+                    margin: 5px 0;
+                }
+                h3:nth-child(3){
+                    color: #fca311;
+                }
+    
+                p{
+                    font-family: 'Rajdhani', sans-serif;
+                    font-size: 1.2rem;
+                    margin: 10px 0;
+                }
+                p:nth-child(5){
+                    color: #fca311;
+                    font-weight: 600;
+                }
+    
+                button{
+                    background-color: transparent;
+                    border: none;
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    svg{
+                        font-size: 1.2rem;
+                        color: #fca311;
+                        cursor: pointer;
+                    }
+                    svg:hover{
+                        color: #000000;
+                        transition: ease-in-out 0.2s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(min-width: 400px) and (max-width:800px){
+    .user-timezones{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .timezone{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .intro{
+                display: flex;
+                background-color: transparent;
+                color: #14213d;
+                justify-content: center;
+                width: 95%;
+                h3{
+                    color: #fca311;
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+        
+    
+            div{
+                min-width: 150px;
+                max-width: auto;
+                margin: 10px 5px;
+                padding: 10px;
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+                background-color: #e5e5e5;
+                color: #14213d;
+                border-radius: 10px;
+                position: relative;
+    
+                h3{
+                    margin: 0;
+                }
+                h3:nth-child(2){
+                    margin: 5px 0;
+                }
+                h3:nth-child(3){
+                    color: #fca311;
+                }
+    
+                p{
+                    font-family: 'Rajdhani', sans-serif;
+                    font-size: 1.2rem;
+                    margin: 10px 0;
+                }
+                p:nth-child(5){
+                    color: #fca311;
+                    font-weight: 600;
+                }
+    
+                button{
+                    background-color: transparent;
+                    border: none;
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    svg{
+                        font-size: 1.2rem;
+                        color: #fca311;
+                        cursor: pointer;
+                    }
+                    svg:hover{
+                        color: #000000;
+                        transition: ease-in-out 0.2s;
+                    }
+                }
+            }
+        }
+    }
+}

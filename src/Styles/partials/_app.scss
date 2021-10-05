@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(241,250,238);
+    background: radial-gradient(circle, rgba(241,250,238,1) 0%, rgba(242,247,240,1) 62%, rgba(255,255,255,1) 100%);
+}
+
+.App{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cabin', sans-serif;
+}
+
+/*
+White: f1faee
+Red: e63946
+Light Blue: a8dadc
+Blue: 457b9d
+dark Blue: 1d3557
+*/
