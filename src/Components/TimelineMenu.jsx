@@ -26,7 +26,6 @@ export default function TimelineMenu({setSelections, selections}){
     }
 
     function getLocationTimezone(e){
-        console.log(e.target.innerText)
         changeClassSearchBox()
         createTimezone(e.target.innerText)
     }
@@ -59,7 +58,6 @@ export default function TimelineMenu({setSelections, selections}){
     async function createTimezone(place){
         const respuesta = await fetch(totalTimezoneURL + zone + '/' + place[0].toUpperCase() + place.slice(1));
         const res = await respuesta.json();
-        console.log(res)
         setSelections([...selections,res])
     }
 
