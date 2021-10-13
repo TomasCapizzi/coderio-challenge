@@ -18,7 +18,11 @@ export default function Timezone({selections, setSelections}){
                      return <div key={item.timezone}  className='zone'>
                                 <button><MdCancel onClick={ ()=> removeTimezone(item.timezone) }/></button>
                                 <h3>{item.timezone.split('/')[0]}</h3>
-                                <h3>{item.timezone.split('/')[1]}</h3>
+                                {
+                                    item.timezone.split('/')[1] === 'Argentina' ? <h3>{item.timezone.split('/')[2]}</h3>
+                                    :
+                                    <h3>{item.timezone.split('/')[1]}</h3>
+                                }
                                 <p>{date}</p>
                                 <p>{time.split(':')[0] + ' : ' +time.split(':')[1]}</p>
                             </div>

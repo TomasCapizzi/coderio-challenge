@@ -56,9 +56,21 @@ export default function TimelineMenu({setSelections, selections}){
     }
 
     async function createTimezone(place){
-        const respuesta = await fetch(totalTimezoneURL + zone + '/' + place[0].toUpperCase() + place.slice(1));
-        const res = await respuesta.json();
-        setSelections([...selections,res])
+        console.log(place[0].toUpperCase() + place.slice(1))
+        if(place === 'buenos_aires' || place === 'catamarca' || place === 'cordoba' || place === 'jujuy' || place === 'la_rioja' || place === 'mendoza' || place === 'rio_gallegos' || place === 'salta' || place === 'san_juan' || place === 'san_luis' || place === 'tucuman' || place === 'ushuaia'){
+            const respuesta = await fetch(totalTimezoneURL + zone + '/Argentina/' + place[0].toUpperCase() + place.slice(1));
+            const res = await respuesta.json();
+            console.log(res)
+            setSelections([...selections,res])
+        }
+        else{
+            const respuesta = await fetch(totalTimezoneURL + zone + '/' + place[0].toUpperCase() + place.slice(1));
+            const res = await respuesta.json();
+            console.log(res)
+            setSelections([...selections,res])
+        }
+
+
     }
 
     useEffect(()=>{
