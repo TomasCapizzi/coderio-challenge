@@ -1,16 +1,16 @@
-import React, {useState} from "react";
+import React from "react";
 import Timezone from "./Timezone";
 import TimelineMenu from "./TimelineMenu";
 
 export default function TimelineContainer(){
 
-    const [selections, setSelections] = useState([]);
+    //const [selections, setSelections] = useState([]);
 
     return(
         <div className='timeline-container'>
-            <TimelineMenu setSelections={setSelections} selections={selections}/>
+            <TimelineMenu />
             <div className='user-timezones'>
-                <Timezone selections={selections} setSelections={setSelections} />
+                <Timezone />
             </div>
         </div>
     )

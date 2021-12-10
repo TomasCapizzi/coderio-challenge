@@ -1,9 +1,15 @@
-import React from "react";
+import React,{useContext} from "react";
 import {MdCancel} from 'react-icons/md'
+import { SelectionsContext } from "../Context/SelectionsContext";
 
-export default function Timezone({selections, setSelections}){
+export default function Timezone(){
+
+
+    const {selections, setSelections} = useContext(SelectionsContext);
+
 
     function removeTimezone(timezone){
+
         setSelections(selections.filter(item => item.timezone !== timezone))
     }
 
