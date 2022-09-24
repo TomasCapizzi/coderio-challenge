@@ -1,16 +1,13 @@
-import React from "react";
-import Footer from "./Components/Footer";
-import TimelineContainer from "./Components/TimelineContainer";
 import './Styles/main.scss';
+
+import Home from "./Pages/Home";
+import React from "react";
 import { SelectionsContextProvider } from "./Context/SelectionsContext";
 
 function App() {
   return (
     <SelectionsContextProvider>
-      <div className="App">
-        <TimelineContainer/>
-        <Footer/>
-      </div>
+      <Home/>
     </SelectionsContextProvider>
   );
 }
