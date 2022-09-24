@@ -1,11 +1,8 @@
 import React from "react";
-import Timezone from "./Timezone";
 import TimelineMenu from "./TimelineMenu";
+import Timezone from "./Timezone";
 
 export default function TimelineContainer(){
-
-    //const [selections, setSelections] = useState([]);
-
     return(
         <div className='timeline-container'>
             <TimelineMenu />
