@@ -1,7 +1,8 @@
-import {useState, useContext} from 'react'
+import {useContext, useState} from 'react'
+
 import { SelectionsContext } from '../Context/SelectionsContext';
 
-const useTimezones = () => {
+const useTimezones = ({searchBoxRef}) => {
 
     const {selections, setSelections} = useContext(SelectionsContext)
 
@@ -34,11 +35,10 @@ const useTimezones = () => {
     }
 
     function addOnClass(){
-        const searchBox = document.getElementById('search-box');
-        if(searchBox.classList.contains('on')){
+        if(searchBoxRef.current.classList.contains('on')){
            console.log('already has it')
         } else{
-            searchBox.classList.add('on');
+            searchBoxRef.current.classList.add('on');
         }
     }
 
