@@ -8,7 +8,7 @@
     margin-bottom: 50px;
 }
 
-@media only screen and(max-width: 400px){
+@media only screen and (max-width: 400px){
     .timeline-container{
         display: flex;
         width: 100%;
@@ -20,14 +20,14 @@
     }
 }
 
-@media only screen and(min-width: 400px) and (max-width:800px){
+@media only screen and (min-width: 400px) and (max-width:800px){
     .timeline-container{
         width: 100%;
         min-height: 630px;
     }
 }
 
-@media only screen and(min-width: 800px) and (max-width:1040px){
+@media only screen and (min-width: 800px) and (max-width:1040px){
     .timeline-container{
         width: 800px;
         min-height: 630px;
