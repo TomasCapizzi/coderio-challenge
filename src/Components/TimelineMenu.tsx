@@ -7,15 +7,18 @@ import Spinner from './Spinner';
 import useTimezones from "../Hooks/useTimezones";
 
 export default function TimelineMenu(){
-    const searchBoxRef = useRef();
+
+    const searchBoxRef = useRef<HTMLDivElement>(null);
     const { filter,  handler,  changeSelect, getLocationTimezone,  getInputValue} = useTimezones({searchBoxRef});
 
 
     function changeClassSearchBox(){
-        if(searchBoxRef.current.classList.contains('on')){
-            searchBoxRef.current.classList.remove('on');
-        } else{
-            searchBoxRef.current.classList.add('on');
+        if(searchBoxRef.current){
+            if(searchBoxRef.current.classList.contains('on')){
+                searchBoxRef.current.classList.remove('on');
+            } else{
+                searchBoxRef.current.classList.add('on');
+            }
         }
     }
 

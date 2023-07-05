@@ -2,13 +2,20 @@ import React,{useContext} from 'react';
 
 import {MdCancel} from 'react-icons/md';
 import { SelectionsContext } from '../Context/SelectionsContext';
+import { Timezone, TimezoneContext } from '../Types/Types';
 
-function Zone({item, date, time}) {
-    const {selections, setSelections} = useContext(SelectionsContext);
+interface Props {
+  item: Timezone
+  date: string
+  time: string
+}
 
-    function removeTimezone(timezone){
+function Zone({item, date, time}: Props) {
+  
+    const {selections, setSelections} = useContext(SelectionsContext) as TimezoneContext;
 
-        setSelections(selections.filter(item => item.timezone !== timezone))
+    function removeTimezone(timezone: string){
+      setSelections(selections.filter(item => item.timezone !== timezone))
     }
   return (
     <div key={item.timezone}  className='zone'>

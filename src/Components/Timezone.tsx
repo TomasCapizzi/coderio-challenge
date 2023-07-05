@@ -3,11 +3,11 @@ import React,{useContext} from "react";
 import Intro from "./Intro";
 import { SelectionsContext } from "../Context/SelectionsContext";
 import Zone from "./Zone";
+import { TimezoneContext } from "../Types/Types";
 
 export default function Timezone(){
 
-
-    const {selections, setSelections} = useContext(SelectionsContext);
+    const {selections} = useContext(SelectionsContext) as TimezoneContext;
 
     return(
         <article className='timezone'>

@@ -1,8 +1,12 @@
 import React from 'react'
 
-function MenuZones({changeSelect}) {
+interface Props {
+  changeSelect: (e: React.ChangeEvent<HTMLSelectElement>) => void
+}
+
+function MenuZones({changeSelect}: Props) {
   return (
-    <select name="timezone" id="timezone" onChange={changeSelect} className='menu-data'>
+    <select name="timezone" id="timezone" onChange={(e)=> changeSelect(e)} className='menu-data'>
         <option value="">Choose timezone...</option>
         <option value="America">America</option>
         <option value="Asia">Asia</option>

@@ -1,6 +1,12 @@
 import React from 'react'
 
-function MenuLocationItem({item, getLocationTimezone, changeClassSearchBox}) {
+interface Props {
+  item: string
+  getLocationTimezone: (e:React.MouseEvent<HTMLParagraphElement>, changeClassSearchBox: ()=> void) => void
+  changeClassSearchBox:() => void
+}
+
+function MenuLocationItem({item, getLocationTimezone, changeClassSearchBox}: Props) {
   return (
     <p key={item} onClick={(e)=> getLocationTimezone(e, changeClassSearchBox)}>{
         item.includes('Argentina') || item.includes('Indiana') ? item.split('/')[2].toLowerCase()
